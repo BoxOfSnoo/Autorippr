@@ -6,7 +6,7 @@ RUN apt-get update &&\
     apt-get install -y software-properties-common &&\
     add-apt-repository ppa:stebbins/handbrake-releases &&\
     apt-get update &&\
-    apt-get install -y python-pip handbrake-cli libssl1.0.0 libexpat1 libavutil55 libavformat57 libavcodec-dev libavcodec-extra57 libgl1-mesa-glx unzip &&\
+    apt-get install -y python-pip handbrake-cli libssl1.0.0 libexpat1 libavutil55 libavformat57 libavcodec-dev libavcodec-extra57 libgl1-mesa-glx unzip libmediainfo0v5 &&\
     rm -rf /var/lib/apt/lists/*
 #RUN echo "deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main ">/etc/apt/sources.list.d/handbreak.list && apt-get update && apt-get install --allow-unauthenticated -y python-pip handbrake-cli libssl1.0.0 libexpat1 libavcodec-ffmpeg56 libgl1-mesa-glx unzip 
 #libavcodec-ffmpeg-extra56
