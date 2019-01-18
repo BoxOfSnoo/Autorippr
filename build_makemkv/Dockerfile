@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-RUN apt-get update && apt-get install -y python-virtualenv build-essential pkg-config libc6-dev libssl-dev libexpat1-dev libavcodec-dev libgl1-mesa-dev 
+RUN apt-get update && apt-get install -y python-virtualenv build-essential pkg-config libc6-dev libssl-dev libexpat1-dev libavcodec-dev libgl1-mesa-dev libqt4-dev zlib1g-dev 
 
 ADD http://www.makemkv.com/download/makemkv-oss-1.14.2.tar.gz /src/
 ADD http://www.makemkv.com/download/makemkv-bin-1.14.2.tar.gz /src/

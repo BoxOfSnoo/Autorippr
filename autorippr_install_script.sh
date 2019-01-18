@@ -31,7 +31,7 @@ wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 
 #Intall MakeMKV required tools and libraries
-sudo apt-get install build-essential pkg-config libc6-dev libssl-dev libexpat1-dev libavcodec-dev libgl1-mesa-dev libqt4-dev
+sudo apt-get install build-essential pkg-config libc6-dev libssl-dev libexpat1-dev libavcodec-dev libgl1-mesa-dev libqt4-dev zlib1g-dev
 
 #Install MakeMKV
 wget http://www.makemkv.com/download/makemkv-bin-1.14.2.tar.gz
