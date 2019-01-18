@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 COPY /build/* /
 
 RUN apt-get update &&\
-    apt-get install software-properties-common &&\
+    apt-get install -y software-properties-common &&\
     add-apt-repository ppa:stebbins/handbrake-releases &&\
     apt-get update &&\
     apt-get install -y python-pip handbrake-cli libssl1.0.0 libexpat1 libavcodec-ffmpeg56 libgl1-mesa-glx unzip &&\
