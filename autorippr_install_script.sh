@@ -34,16 +34,16 @@ sudo python get-pip.py
 sudo apt-get install build-essential pkg-config libc6-dev libssl-dev libexpat1-dev libavcodec-dev libgl1-mesa-dev libqt4-dev
 
 #Install MakeMKV
-wget http://www.makemkv.com/download/makemkv-bin-1.10.2.tar.gz
-wget http://www.makemkv.com/download/makemkv-oss-1.10.2.tar.gz
-tar -zxmf makemkv-oss-1.10.2.tar.gz
-tar -zxmf makemkv-bin-1.10.2.tar.gz
-cd makemkv-oss-1.10.2
+wget http://www.makemkv.com/download/makemkv-bin-1.14.2.tar.gz
+wget http://www.makemkv.com/download/makemkv-oss-1.14.2.tar.gz
+tar -zxmf makemkv-oss-1.14.2.tar.gz
+tar -zxmf makemkv-bin-1.14.2.tar.gz
+cd makemkv-oss-1.14.2
 ./configure
 make
 sudo make install
 cd ..
-cd makemkv-bin-1.10.2
+cd makemkv-bin-1.14.2
 make
 sudo make install
 
@@ -72,7 +72,7 @@ sudo pip install tendo pyyaml peewee pushover
 
 # Install Autorippr
 cd ~
-git clone https://github.com/JasonMillward/Autorippr.git
+git clone https://github.com/MartinHell/Autorippr.git
 cd Autorippr
 git checkout
 cp settings.example.cfg settings.cfg
