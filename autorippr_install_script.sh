@@ -68,7 +68,7 @@ fi
 sudo dpkg --force-depends -i filebot-*.deb && rm filebot-*.deb
 
 # Install Python Required Packages
-sudo pip install tendo pyyaml peewee pushover
+sudo pip install tendo pyyaml peewee pushover pymediainfo
 
 # Install Autorippr
 cd ~
