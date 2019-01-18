@@ -153,7 +153,7 @@ class MakeMKV(object):
             [
                 '%smakemkvcon' % self.makemkvconPath,
                 'mkv',
-                'disc:%d' % self.discIndex,
+                'dev:/dev/sr0' % self.discIndex,
                 titleIndex,
                 fullpath,
                 '--cache=%d' % self.cacheSize,
@@ -223,7 +223,7 @@ class MakeMKV(object):
         """
         drives = []
         proc = subprocess.Popen(
-            ['%smakemkvcon' % self.makemkvconPath, '-r', 'info', 'disc:-1'],
+            ['%smakemkvcon' % self.makemkvconPath, '-r', 'info', 'dev:/dev/sr0'],
             stderr=subprocess.PIPE,
             stdout=subprocess.PIPE
         )
@@ -282,7 +282,7 @@ class MakeMKV(object):
                 '%smakemkvcon' % self.makemkvconPath,
                 '-r',
                 'info',
-                'disc:%d' % self.discIndex,
+                'dev:/dev/sr0,
                 '--decrypt',
                 '--minlength=%d' % self.minLength,
                 '--messages=/tmp/makemkvMessages'
