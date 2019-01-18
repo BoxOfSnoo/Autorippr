@@ -153,7 +153,7 @@ class MakeMKV(object):
             [
                 '%smakemkvcon' % self.makemkvconPath,
                 'mkv',
-                'dev:/dev/sr0' % self.discIndex,
+                'dev:/dev/sr0',
                 titleIndex,
                 fullpath,
                 '--cache=%d' % self.cacheSize,
@@ -282,7 +282,7 @@ class MakeMKV(object):
                 '%smakemkvcon' % self.makemkvconPath,
                 '-r',
                 'info',
-                'dev:/dev/sr0,
+                'dev:/dev/sr0',
                 '--decrypt',
                 '--minlength=%d' % self.minLength,
                 '--messages=/tmp/makemkvMessages'
